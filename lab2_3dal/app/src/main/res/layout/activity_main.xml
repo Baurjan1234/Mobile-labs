@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:id="@+id/number1" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:id="@+id/number2" />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn0"
+            android:layout_weight="1" />
+        <Button
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:layout_weight="1" />
+        <Button
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:layout_weight="1" />
+        <Button
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:layout_weight="1" />
+        <Button
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <Button
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn5"
+            android:layout_weight="1" />
+        <Button
+            android:text="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn6"
+            android:layout_weight="1" />
+        <Button
+            android:text="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn7"
+            android:layout_weight="1" />
+        <Button
+            android:text="8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn8"
+            android:layout_weight="1" />
+        <Button
+            android:text="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn9"
+            android:layout_weight="1" />
+    </TableRow>
+</TableLayout>
+</LinearLayout>
+    3. MainActivity.java файл дээр шаардлагатай widget -үүдийн объектуудыг зарлаж, XML
+    файл дотор зарлагдсан widget -үүдтэй холбоно. Мөн гараас оруулах хоёр тоог хадгалах
+    string өгөгдлийн төрөлтэй хоёр хувьсагч, энэ хоёр тоон дээр хийгдэх үйлдлийн үр дүнг
+    хадгалах int өгөгдлийн төрөлтэй нэг хувьсагч, 0-9 хүртэлх тоонуудын товчнуудыг
+    хадгалах массив, эдгээр товчнуудын id утгыг хадгалах массивыг тус тус зарлана.
+    4. 0-9 хүртэлх тоонуудын товчнууд дээр дархад харгалзах утгуудыг сонгосон EditText рүү
+    дарааллуулан бичиж, үүсэх тоон дарааллаас бүтэх нэг бүхэл тоог хадгалан авдаг байна.
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<Button
+    android:text="add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnAdd" />
+<Button
+    android:text="Subtract"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSub" />
+<Button
+    android:text="Multiply"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnMult" />
+<Button
+    android:text="divide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnDiv" />
+<TextView
+    android:text="Result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/resText"
+    android:textSize="30sp"
+    android:textColor="@android:color/black" />
+</LinearLayout>
+</LinearLayout>
